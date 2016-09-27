@@ -21,7 +21,7 @@ module.exports = function (app) {
     app.task('default', ['npmrc'])
 
     app.task('npmrc', function (cb) {
-        return app.src('templates/.npmrc', {cwd: __dirname})
+        return app.src('templates/npmrc', {cwd: __dirname})
             .pipe(app.conflicts(app.cwd))
             .pipe(app.dest(function (file) {
                 file.basename = '.npmrc'
