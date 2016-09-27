@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/my-generator/generate-npmrc/issues"
   },
-  "homepage": "https://github.com/my-generator/generate-npmrc#readme"
+  "homepage": "https://github.com/my-generator/generate-npmrc#readme",
+  "devDependencies": {
+    "generate": "^0.12.1"
+  },
+  "dependencies": {
+    "is-valid-app": "^0.2.1"
+  }
 }
